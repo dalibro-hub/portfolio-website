@@ -1,2 +1,2 @@
 # portfolio-website
-personal portfolio
+This is my personal portfolio website - work in progress
