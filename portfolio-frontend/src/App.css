@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family-1);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-x: hidden;
+  background: var(--color-gradient);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: unset;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+  width: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-track {
+  background: var(--color-gradient);
+  border-radius: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #b80000;
+  border-radius: 25px;
+}
+.gradient__bg {
+  background: rgb(253, 251, 251);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(253, 251, 251, 1) 0%,
+    rgba(235, 237, 238, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(253, 251, 251, 1) 0%,
+    rgba(235, 237, 238, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(253, 251, 251, 1) 0%,
+    rgba(235, 237, 238, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfbfb",endColorstr="#ebedee",GradientType=1);
+}
+.solid__bg {
+  background-color: var(--color-white);
 }

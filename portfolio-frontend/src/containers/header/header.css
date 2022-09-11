@@ -1,0 +1,16 @@
+.pf__Header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 11rem;
+  height: 100vh;
+  gap: 1.5rem;
+}
+.pf__Header-container-heading {
+  border-left: 3px solid #fff;
+  padding: 0 0 0 1rem;
+}
+.pf__Header-container h1 {
+  margin-bottom: 0.3rem;
+}
