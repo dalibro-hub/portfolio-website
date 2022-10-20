@@ -19,16 +19,16 @@
   --color-text: #c6cfff;
   --color-subtext: #ff957342;
 }
-.smf-button {
+.pf-button {
   cursor: pointer;
   border: none;
-  padding: 0.7rem 2.5rem;
-  border-radius: 7px;
-  background-color: #ffffff;
-  color: var(--color-red);
+  padding: 0.5rem 2.5rem;
+  border-radius: 3rem;
+  border: 3px solid #daa700;
+  color: var(--color-white);
+  background-color: transparent;
   font-weight: 700;
-  font-size: clamp(19px, 3vw, 25px);
-  box-shadow: 0 4px 14px 0 #f7f7f763;
+  font-size: clamp(1em, 3vw, 1.5em);
 }
 .slide-in-left {
   -webkit-animation: slide-in-left 0.75s ease-out both;

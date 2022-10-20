@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 35px;
+  gap: 3.5rem;
   padding: 0.5rem;
   font-weight: 700;
 }
@@ -37,8 +37,8 @@
 }
 .smf__Navbar_containers-logo {
   position: absolute;
-  left: 1.5rem;
-  top: -0.7rem;
+  left: 3rem;
+  
 }
 @media screen and (max-width: 800px) {
   .smf__Navbar-containers {

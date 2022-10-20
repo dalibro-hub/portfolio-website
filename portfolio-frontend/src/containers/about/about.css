@@ -1,0 +1,28 @@
+.pf__About-container {
+  background-color: rgb(182, 182, 182);
+}
+
+.pf__About-container_header {
+  text-align: center;
+  font-size: 2.3rem;
+  
+  padding-top: 1.5rem;
+}
+
+.pf__About-container h2 {
+  font-size: 1.9rem;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+}
+.pf__About-container_paragraph {
+  margin: 3rem 4rem;
+}
+.pf__About-container_features {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 13rem);
+  grid-template-rows: auto auto;
+  
+  padding-bottom: 10rem;
+}

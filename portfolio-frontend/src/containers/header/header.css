@@ -1,16 +1,54 @@
+.pf__Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100rem;
+}
 .pf__Header-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  margin-left: 11rem;
+  padding: 6rem 0 0 10rem;
   height: 100vh;
-  gap: 1.5rem;
+  width: 100vw;
+  gap: 2rem;
+  color: var(--color-white);
 }
-.pf__Header-container-heading {
-  border-left: 3px solid #fff;
-  padding: 0 0 0 1rem;
+.pf__Header-container_heading {
+  border-left: 0.15rem solid #fff;
+  padding: 0 0 0 2rem;
+  margin-left: -2rem;
+  margin-top: 40vh;
+  text-align: start;
+}
+.pf__Header-container_projects {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 0.7rem;
+}
+.pf__Header-container_projects p {
+  margin-left: 3rem;
+}
+.pf__Header-container_projects p::before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 0.1em;
+  position: relative;
+  vertical-align: middle;
+  width: 55%;
+  margin-left: -55%;
+  right: 1rem;
 }
 .pf__Header-container h1 {
+  line-height: 0.8em;
+  font-size: 2.5em;
   margin-bottom: 0.3rem;
+}
+.pf__Header-container_image {
+  padding-right: 5rem;
+  max-width: 100%;
+  height: 100vh;
 }
