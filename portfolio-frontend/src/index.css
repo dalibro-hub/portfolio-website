@@ -8,7 +8,9 @@
   --color-gradient: linear-gradient(
     90deg,
     rgba(73, 73, 73, 1) 0%,
-    rgba(55, 55, 55, 1) 50%,
+    
+    
+    
     rgba(36, 36, 36, 1) 100%
   );
   --boxShadow: #0000004d 10px 15px 30px, #00000038 0px 15px 12px;

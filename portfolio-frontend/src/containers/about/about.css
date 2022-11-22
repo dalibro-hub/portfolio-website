@@ -21,7 +21,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(4, 13rem);
+  grid-template-columns: repeat(4, 10rem);
   grid-template-rows: auto auto;
   
   padding-bottom: 10rem;

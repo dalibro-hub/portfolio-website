@@ -1,6 +1,7 @@
 import {useState } from "react";
 import axios from "axios";
 import paperPlane from "../../assets/paperPlane.png";
+import {Socials} from "../../components"
 import "./contact.css";
 
 function Contact() {
@@ -42,7 +43,7 @@ function Contact() {
             <input
               type="name"
               name="name"
-              placeholder="popuReactDomp__name"
+              placeholder="name"
               value={name}
               required={true}
               onChange={(e) => setName(e.target.value)}
@@ -50,7 +51,7 @@ function Contact() {
             <input
               type="email"
               name="email"
-              placeholder="popup__email"
+              placeholder="email"
               value={mail}
               required={true}
               onChange={(e) => setMail(e.target.value)}
@@ -63,18 +64,18 @@ function Contact() {
               }}
               type="tel"
               name="phone"
-              placeholder="popup__phone"
+              placeholder="phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
             <textarea
-              placeholder="popup__message"
+              placeholder="message"
               name="textarea"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
             <button
-              onSubmit={keepOpen}
+              
               type="submit"
               className="pf__contact-form_sendBtn scale-up-center"
             >
@@ -88,8 +89,10 @@ function Contact() {
           </form>
         </>
       ) : (
-        <h1 className="pf__contact-form_sent">popup__tyMsg</h1>
+        <h1 className="pf__contact-form_sent">tyMsg</h1>
       )}
+      <hr className="pf__Hr-line"></hr>
+      <Socials/>
     </div>
   );
 }
