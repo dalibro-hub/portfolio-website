@@ -1,5 +1,7 @@
 import { Navbar } from "./components";
 import { Header, About, Resume, Contact, Footer } from "./containers";
+import { Socials} from "./components";
+
 import "./App.css";
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
       <About />
       <Resume />
       <Contact />
+      <Socials />
       <Footer />
     </div>
   );

@@ -5,6 +5,7 @@ import { Logo } from "../../components";
 const Socials = () => {
   return (
     <div className="pf__Socials-main">
+      <hr className="pf__Hr-line"></hr>
       <Logo />
       <div className="pf__Socials-container">
         <div>

@@ -4,11 +4,15 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 3rem;
 }
 .pf__Socials-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+}
+.pf__Hr-line {
+    width: 87vw;
+    margin: 1rem 0 1.5rem 0;
 }
