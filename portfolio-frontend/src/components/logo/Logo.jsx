@@ -2,35 +2,19 @@ import "./logo.css";
 
 function Logo() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="15mm"
-      height="15mm"
-      version="1.1"
-      viewBox="75 60 60 150"
-    >
-      <defs>
-        <linearGradient>
-          <stop offset="0" stopColor="#000" stopOpacity="1"></stop>
-        </linearGradient>
-        <color-profile
-          name="Artifex-CMYK-SWOP-Profile"
-          xlinkHref="file:///snap/inkscape/10432/usr/share/color/icc/ghostscript/default_cmyk.icc"
-        ></color-profile>
-      </defs>
+    <svg width="30mm" height="30mm" version="1.1" viewBox="45 -55 180 350">
       <g>
         <path
           className="logo"
           fillOpacity="1"
           strokeDasharray="none"
           strokeLinecap="butt"
-          stroke="#a98200"
+          stroke="#5f5f5f"
           strokeLinejoin="bevel"
           strokeMiterlimit="0"
           strokeOpacity="1"
-          strokeWidth="0.3rem"
-          d="M114.397 73.629c-22.638-.049-47.99 5.658-47.99 5.658l-27.7 84.766c10.558 17.034 41.748 5.042 45.225-5.312 4.737-14.103 9.46-29.083 15.315-46.983l-26.965-.006 6.856-20.962h55.597l-6.86 20.971-16.548 50.596h-.001c-8.728 29.035-30.963 34.666-42.63 35.556h31c74.603-2.45 102.528-93.084 39.402-120.464-6.2-2.69-14.663-3.72-23.625-3.814-.358-.003-.717-.006-1.076-.006z"
+          strokeWidth="0.45rem"
+          d="m 182.63184,40.606849 c -23.14731,0.425406 -56.7731,4.031676 -83.739879,8.115975 C 81.292175,91.21136 63.692386,133.69989 46.092597,176.18843 c 23.041516,12.02067 63.377523,9.35466 72.154453,-12.71675 h -5.2e-4 l 21.1,-51.26561 -26.30433,-0.004 -2.52957,-5.2e-4 12.02614,-29.321205 30.47928,-5.16e-4 35.51825,0.0021 -12.10366,29.329991 -20.2954,49.31171 c -19.14624,46.51849 -25.04863,47.88708 -72.530974,52.14514 l 71.897874,0.43088 C 226.3013,208.16967 291.14946,99.181611 222.48401,49.789877 211.16807,42.6484 192.37127,40.409275 182.63184,40.606849 Z"
           paintOrder="normal"
         ></path>
       </g>

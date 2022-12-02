@@ -5,14 +5,6 @@
   --font-family-2: "Open Sans", sans-serif;
   --font-family-3: "Ubuntu", sans-serif;
 
-  --color-gradient: linear-gradient(
-    90deg,
-    rgba(73, 73, 73, 1) 0%,
-    
-    
-    
-    rgba(36, 36, 36, 1) 100%
-  );
   --boxShadow: #0000004d 10px 15px 30px, #00000038 0px 15px 12px;
   --color-grey: #6b6b6b;
   --color-red: #b80000c2;
@@ -132,10 +124,41 @@
     opacity: 0;
   }
 }
+.scale-down {
+  transition: transform 0.7s ease-in-out;
+  -webkit-transition: transform 0.7s ease-in-out;
+  -moz-transition: transform 0.7s ease-in-out;
+  -ms-transition: transform 0.7s ease-in-out;
+}
+.scale-up {
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+}
+.scale-up-center {
+  transition: transform 0.7s ease-in-out;
+  -webkit-transition: transform 0.7s ease-in-out;
+  -moz-transition: transform 0.7s ease-in-out;
+  -ms-transition: transform 0.7s ease-in-out;
+}
 .scale-up-center:hover {
-  -webkit-animation: scale-up-center 0.25s cubic-bezier(0.39, 0.575, 0.565, 1)
-    both;
-  animation: scale-up-center 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
 }
 @-webkit-keyframes scale-up-center {
   0% {

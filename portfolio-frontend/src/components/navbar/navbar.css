@@ -10,7 +10,8 @@
   color: var(--color-white);
   position: absolute;
   z-index: 99;
-  margin-top: 1.2rem;
+  background-color: rgba(10, 10, 10, 0.418);
+  padding: 1rem;
 }
 .smf__Navbar-containers {
   display: flex;
@@ -19,26 +20,50 @@
   gap: 3.5rem;
   padding: 0.5rem;
   font-weight: 700;
+  font-size: 1.3em;
+}
+.smf__Navbar-containers a {
+  display: inline-block;
+  position: relative;
+}
+.smf__Navbar-containers a::after {
+  content: "";
+  margin-bottom: -0.3rem;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #daa700;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+.smf__Navbar-containers a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .smf__Navbar-menu {
   display: none;
   position: relative;
   margin: 0.3rem 2rem;
 }
-.smf__Navbar-menu-container {
+.smf__Navbar-menu_container-links {
   display: flex;
   flex-direction: column;
   position: absolute;
   min-width: fit-content;
-  top: 2.2rem;
+  top: 1rem;
   line-height: 2rem;
   border-radius: 10px;
-  padding: 1.3rem;
+  padding: 1rem;
+  background-color: #daa700b0;
+  font-weight: 900;
+  color: #000;
 }
 .smf__Navbar_containers-logo {
   position: absolute;
-  left: 3rem;
-  
+  left: 5rem;
 }
 @media screen and (max-width: 800px) {
   .smf__Navbar-containers {
@@ -46,6 +71,8 @@
   }
   .smf__Navbar {
     justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 1.1rem;
   }
   .smf__Navbar-menu {
     display: flex;

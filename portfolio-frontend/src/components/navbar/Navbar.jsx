@@ -20,42 +20,48 @@ function Navbar() {
         <div className="smf__Navbar_containers-logo">
           <Logo />
         </div>
-        <p className="scale-up-center">
-          <a href="#HOME"> HOME </a>
-        </p>
-        <p className="scale-up-center">
-          <a href="#ABOUT">ABOUT</a>
-        </p>
-        <p className="scale-up-center">
-          <a href="#CONTACT">CONTACT</a>
-        </p>
+        <a className="scale-up-center" href="#HOME">
+          HOME
+        </a>
+        <a className="scale-up-center" href="#ABOUT">
+          ABOUT
+        </a>
+        <a className="scale-up-center" href="#RESUME">
+          RESUME
+        </a>
+        <a className="scale-up-center" href="#CONTACT">
+          CONTACT
+        </a>
       </div>
       <div className="smf__Navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
-            size={27}
+            size={30}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
           <RiMenuLine
             color="#fff"
-            size={27}
+            size={30}
             onClick={() => setToggleMenu(true)}
           />
         )}
         {toggleMenu && (
           <div className="smf__Navbar-menu-container fade-in-fast">
             <div className="smf__Navbar-menu_container-links">
-              <p className="scale-up-center">
-                <a href="#HOME"> HOME </a>
-              </p>
-              <p className="scale-up-center">
-                <a href="#ABOUT">ABOUT</a>
-              </p>
-              <p className="scale-up-center">
-                <a href="#CONTACT">CONTACT</a>
-              </p>
+              <a className="scale-up-center" href="#HOME">
+                HOME
+              </a>
+              <a className="scale-up-center" href="#ABOUT">
+                ABOUT
+              </a>
+              <a className="scale-up-center" href="#RESUME">
+                RESUME
+              </a>
+              <a className="scale-up-center" href="#CONTACT">
+                CONTACT
+              </a>
             </div>
           </div>
         )}

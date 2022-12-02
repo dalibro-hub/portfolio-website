@@ -1,14 +1,11 @@
 .pf__About-container {
   background-color: rgb(182, 182, 182);
 }
-
 .pf__About-container_header {
   text-align: center;
   font-size: 2.3rem;
-  
   padding-top: 1.5rem;
 }
-
 .pf__About-container h2 {
   font-size: 1.9rem;
   margin-left: 5rem;
@@ -23,6 +20,5 @@
   align-items: center;
   grid-template-columns: repeat(4, 10rem);
   grid-template-rows: auto auto;
-  
   padding-bottom: 10rem;
 }

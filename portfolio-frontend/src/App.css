@@ -7,22 +7,24 @@
 }
 body {
   overflow-x: hidden;
-  background-image: var(--color-gradient);
-  
+  background-image: url("../src/assets/pict2.jpg");
+  background-size: 100vw 100vh;
 }
+
 a {
   color: unset;
   text-decoration: none;
 }
 ::-webkit-scrollbar {
   width: 10px;
+  background: #202020;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-gradient);
+  background: #404040;
   border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #b80000;
+  background-color: #daa700b6;
   border-radius: 25px;
 }
 .gradient__bg {

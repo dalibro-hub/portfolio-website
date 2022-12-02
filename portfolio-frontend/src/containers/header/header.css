@@ -15,32 +15,34 @@
   color: var(--color-white);
 }
 .pf__Header-container_heading {
-  border-left: 0.15rem solid #fff;
+  border-left: 0.2rem solid #fff;
   padding: 0 0 0 2rem;
   margin-left: -2rem;
   margin-top: 40vh;
   text-align: start;
+  font-size: 1.6em;
 }
 .pf__Header-container_projects {
   display: flex;
   margin-top: auto;
   align-items: center;
-  margin-bottom: 1.5rem;
+  font-size: 1.5em;
+  margin-bottom: 2.5rem;
   gap: 0.7rem;
 }
 .pf__Header-container_projects p {
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 .pf__Header-container_projects p::before {
   background-color: #fff;
   content: "";
   display: inline-block;
-  height: 0.1em;
+  height: 0.13rem;
   position: relative;
   vertical-align: middle;
   width: 55%;
   margin-left: -55%;
-  right: 1rem;
+  right: 0.9rem;
 }
 .pf__Header-container h1 {
   line-height: 0.8em;
