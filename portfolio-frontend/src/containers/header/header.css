@@ -32,6 +32,7 @@
 }
 .pf__Header-container_projects p {
   margin-left: 5rem;
+  font-family: var(--font-family-1);
 }
 .pf__Header-container_projects p::before {
   background-color: #fff;
@@ -46,9 +47,16 @@
 }
 .pf__Header-container h1 {
   line-height: 0.8em;
+  font-family: var(--font-family-5);
+  font-weight: 300;
   font-size: 2.5em;
   margin-bottom: 0.3rem;
 }
+
+.pf__Header-container h4{
+  font-family: var(--font-family-1);
+}
+
 .pf__Header-container_image {
   padding-right: 5rem;
   max-width: 100%;

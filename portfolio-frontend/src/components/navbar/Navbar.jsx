@@ -16,24 +16,24 @@ function Navbar() {
       ref={ref}
       className={inView ? "smf__Navbar fade-in-fast" : "smf__Navbar"}
     >
-      <div className="smf__Navbar-containers">
-        <div className="smf__Navbar_containers-logo">
-          <Logo />
+      <div className="smf__Navbar-containers ">
+        <div className="smf__Navbar_containers-logo swing-in-top-fwd">
+          <Logo size="45 -62 180 370" width={"30mm"} height={"30mm"} />
         </div>
-        <a className="scale-up-center" href="#HOME">
+        <a className=" scale-up-center " href="#HOME">
           HOME
         </a>
-        <a className="scale-up-center" href="#ABOUT">
+        <a className=" scale-up-center " href="#ABOUT">
           ABOUT
         </a>
-        <a className="scale-up-center" href="#RESUME">
+        <a className=" scale-up-center " href="#RESUME">
           RESUME
         </a>
-        <a className="scale-up-center" href="#CONTACT">
+        <a className="swing-in-top-fwd scale-up-center " href="#CONTACT">
           CONTACT
         </a>
       </div>
-      <div className="smf__Navbar-menu">
+      <div className="smf__Navbar-menu swing-in-top-fwd">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"

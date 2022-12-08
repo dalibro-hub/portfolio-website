@@ -7,7 +7,7 @@ import "./header.css";
 function Header() {
   const [hoveringText, sethoveringText] = useState("");
   const addClass = () => {
-    sethoveringText("scale-up");
+    sethoveringText("scale-up swing-in-top-fwd");
   };
   const removeClass = () => {
     sethoveringText("scale-down");
@@ -17,14 +17,17 @@ function Header() {
       <Navbar />
       <div className="pf__Header">
         <div className="pf__Header-container">
-          <div className="pf__Header-container_heading">
+          <div className="pf__Header-container_heading swing-in-top-fwd">
             <h1>Dalibor Jaksic</h1>
             <h4>engineer / web developer</h4>
           </div>
-          <button type="button" className="pf-button scale-up-center">
+          <button
+            type="button"
+            className="pf-button scale-up-center swing-in-top-fwd"
+          >
             Contact
           </button>
-          <div className="pf__Header-container_projects ">
+          <div className="pf__Header-container_projects swing-in-top-fwd">
             <p onMouseEnter={addClass} onMouseLeave={removeClass}>
               view projects
             </p>
@@ -32,7 +35,7 @@ function Header() {
           </div>
         </div>
         <img
-          className="pf__Header-container_image"
+          className="pf__Header-container_image swing-in-top-fwd"
           src={djed}
           alt="myself"
         ></img>

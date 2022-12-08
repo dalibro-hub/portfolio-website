@@ -3,14 +3,24 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: var(--font-family-1);
 }
 body {
   overflow-x: hidden;
   background-image: url("../src/assets/pict2.jpg");
   background-size: 100vw 100vh;
 }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 4em;
 
+  font-family: var(--font-family-5);
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
 a {
   color: unset;
   text-decoration: none;

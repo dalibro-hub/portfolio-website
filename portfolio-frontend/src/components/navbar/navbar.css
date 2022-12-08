@@ -20,7 +20,8 @@
   gap: 3.5rem;
   padding: 0.5rem;
   font-weight: 700;
-  font-size: 1.3em;
+  font-family: var(--font-family-3);
+  font-size: 1.1em;
 }
 .smf__Navbar-containers a {
   display: inline-block;
