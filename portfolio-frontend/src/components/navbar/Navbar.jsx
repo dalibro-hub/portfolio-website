@@ -20,17 +20,17 @@ function Navbar() {
         <div className="smf__Navbar_containers-logo swing-in-top-fwd">
           <Logo size="45 -62 180 370" width={"30mm"} height={"30mm"} />
         </div>
-        <a className=" scale-up-center " href="#HOME">
+        <a className=" scale-up-center" href="#HOME">
           HOME
         </a>
         <a className=" scale-up-center " href="#ABOUT">
           ABOUT
         </a>
-        <a className=" scale-up-center " href="#RESUME">
+        <a className="scale-up-center " href="#RESUME">
           RESUME
         </a>
-        <a className="swing-in-top-fwd scale-up-center " href="#CONTACT">
-          CONTACT
+        <a className="scale-up-center  " href="#CONTACT">
+          SERVICES
         </a>
       </div>
       <div className="smf__Navbar-menu swing-in-top-fwd">
@@ -60,7 +60,7 @@ function Navbar() {
                 RESUME
               </a>
               <a className="scale-up-center" href="#CONTACT">
-                CONTACT
+                SERVICES
               </a>
             </div>
           </div>

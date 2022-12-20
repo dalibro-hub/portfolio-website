@@ -3,11 +3,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid #daa700;
-  padding: 1.5rem 0rem;
+  border: 3px solid #ffeeca;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 2rem;
 }
 .pf__Feature p {
   text-align: center;
-  font-size: 1rem;
-  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #eeeeee;
+}
+.pf__Feature-title {
+  font-size: 1.2rem;
+  color: #ffeeca;
+}
+.row {
+  flex-direction: row;
+  border-radius: 0;
+  color: #ffeeca;
+  border: none;
+  font-family: var(--font-family-3);
+  box-shadow: rgba(199, 199, 199, 0.3) -2px 1px 11px 4px;
+  -moz-box-shadow: rgba(199, 199, 199, 0.3) -2px 1px 11px 4px;
+  -webkit-box-shadow: rgba(199, 199, 199, 0.3) -2px 1px 11px 4px;
+  background-color: transparent;
+}
+.row:hover {
+  background-color: #66615871;
 }

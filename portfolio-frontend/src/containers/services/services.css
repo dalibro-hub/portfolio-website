@@ -1,0 +1,13 @@
+.pf__Services-container {
+  background-color: rgba(80, 80, 80, 0.507);
+  color: var(--color-white);
+  width: fit-content;
+  padding: 0 3rem;
+}
+
+.pf__Services-container_features {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 20rem);
+  gap: 1rem;
+  margin: 3rem 3rem 1.5rem 3rem;
+}

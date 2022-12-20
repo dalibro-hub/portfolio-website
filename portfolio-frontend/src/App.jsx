@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Header, About, Resume, Contact, Footer } from "./containers";
-import { Socials, Logo } from "./components";
+import { Header, About, Resume, Contact, Services } from "./containers";
+import { Logo } from "./components";
 
 import "./App.css";
 
@@ -9,14 +9,14 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1995);
+    }, 12);
   }, []);
   return (
     <div>
       {loading ? (
         <div className="loading ">
           <div className="puff-in-center">
-            <Logo size="45 15 220 190" width={"45mm"} height={"45mm"} />
+            <Logo size="42 -10  220 240" width={"15rem"} height={"15rem"} />
           </div>
           <p> DALIBOR JAKSIC</p>
         </div>
@@ -26,8 +26,7 @@ function App() {
           <About />
           <Resume />
           <Contact />
-          <Socials />
-          <Footer />
+          <Services />
         </div>
       )}
     </div>

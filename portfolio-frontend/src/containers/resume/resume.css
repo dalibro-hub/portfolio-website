@@ -1,27 +1,32 @@
-.pf__Resume-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.pf__Resume_container-main {
+  width: fit-content;
+  background-color: rgba(80, 80, 80, 0.507);
+  color: var(--color-white);
+  padding: 0 3rem;
 }
-.pf__Resume-h1{
-    margin-top: 2rem;
-}
-.pf__Resume-h4{
-    margin-bottom: 3rem;
-}
-.pf__Resume-features {
-  display: grid;
+.pf__Resume_container {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(2,17rem);
-  grid-template-rows: 3rem repeat(3, 8rem);
-  padding-bottom: 6rem;
+
 }
-.pf__Resume-heading1,
-.pf__Resume-heading2 {
+.pf__Resume_container-features {
+  display: grid;
+  align-items: flex-start;
+  gap:  1rem ;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 38rem);
+  grid-template-rows: 3rem repeat(1, 1fr);
+  
+  margin: 2.5rem 3rem 0 3rem;
+}
+.pf__Resume_container-features-heading{
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
-  
+  white-space: nowrap;
+  width: fit-content;
+}
+.pf__Resume_container-features-heading h3{
+  font-size: 2em;
 }

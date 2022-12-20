@@ -1,34 +1,21 @@
 .pf__About-container_main {
-  background-color: rgba(145, 145, 145, 0.705);
-  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: var(--font-family-1);
   color: var(--color-white);
+  background-color: rgba(80, 80, 80, 0.507);
+  padding: 0 3rem;
 }
 .pf__About-container_side {
   display: flex;
-  margin-top: 2rem;
-  justify-content: left;
-}
-
-.pf__About-container_header {
-  text-align: left;
-  font-size: 1.6rem;
-  padding-top: 1.5rem;
-  margin-left: 5rem;
-}
-.pf__About-container_header::after {
-  background-color: #daa700;
-  content: "";
-  display: inline-block;
-  height: 0.12rem;
-  position: relative;
-  vertical-align: middle;
-  width: 8%;
-  margin-left: 1rem;
+  margin: 2.5rem 0rem 3rem 0rem;
+  justify-content: flex-start;
 }
 .pf__About-container_image {
   max-width: 15vw;
   max-height: 30vh;
-  margin: 1rem 5rem;
+  margin: 1rem 3rem;
 }
 .pf__About-container_side-text {
   display: flex;
@@ -52,23 +39,17 @@
 }
 .pf__About-container_side-info {
   display: flex;
-  gap: 2rem;
-  justify-content: center;
+  gap: 8rem;
+  justify-content: left;
   align-items: center;
-  margin: 1.5rem 0;
+  margin: 1.8rem 0;
 }
-
-.pf__About-container_main h1 {
-  font-size: 2rem;
-  margin-left: 5rem;
-  margin-top: 0.3rem;
-}
-
-.pf__About-container_features {
+.pf__About-container_feature-skills {
   display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 10rem);
-  grid-template-rows: auto auto;
-  padding-bottom: 10rem;
+  grid-template: repeat(3, 1fr) / repeat(4, 17rem);
+  gap: 1.5rem 3rem;
+  margin: 3rem 3rem;
+}
+.pf__About-container_feature-skills p {
+  font-size: 1.3rem;
 }

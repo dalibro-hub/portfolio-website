@@ -1,9 +1,12 @@
 .pf__contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  background-color: rgba(80, 80, 80, 0.507);
+  max-width: fit-content;
+  font-family: var(--font-family-1);
+  color: var(--color-white);
+  padding: 0 3rem;
 }
+
 .pf__contact-container-separator {
   display: flex;
   justify-content: center;

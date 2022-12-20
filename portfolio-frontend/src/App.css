@@ -21,6 +21,9 @@ body {
   width: 100vw;
   flex-direction: column;
 }
+.loading p{
+margin-top: -2.2rem;
+}
 a {
   color: unset;
   text-decoration: none;

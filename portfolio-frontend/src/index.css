@@ -14,6 +14,25 @@
   --color-text: #c6cfff;
   --color-subtext: #ff957342;
 }
+.pf__container-header {
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+  
+}
+.pf__container-header-h3 {
+  font-size: 2.3rem;
+  
+  margin-top: 0.3rem;
+}
+.pf__container-header::after {
+  background-color: #daa700;
+  content: "";
+  display: inline-block;
+  height: 0.15rem;
+  vertical-align: middle;
+  width: 8rem;
+  margin-left: 1rem;
+}
 .pf-button {
   cursor: pointer;
   border: none;

@@ -1,10 +1,11 @@
 import "./feature.css";
 
-function Feature({ iconURL, title }) {
+function Feature({ iconURL, title, text, className }) {
   return (
-    <div className="pf__Feature">
+    <div className={className}>
       <img src={iconURL} alt="features_icon" />
-      <p>{title}</p>
+      <h4 className="pf__Feature-title">{title}</h4>
+      <p>{text}</p>
     </div>
   );
 }

@@ -2,22 +2,38 @@ import { Feature } from "../../components";
 import djed from "../../assets/djed.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import {
-  UI,
-  // UX,
-  // Responsive,
-  // Agile,
-  // SEO,
-  // RESTfull,
-  // Communication,
-  // Analytics
+  confluence,
+  vscode,
+  python,
+  matlab,
+  linux,
+  jira,
+  javascript,
+  html,
+  github,
+  git,
+  react,
+  css,
 } from "./imports";
 import "./about.css";
+import { Footer } from "../index";
 
+const CalculateYears = () => {
+  const myBirthday = new Date("1995-4-18");
+  const date = new Date();
+  if (
+    date.getMonth() < myBirthday.getMonth() ||
+    (date.getMonth() === myBirthday.getMonth() &&
+      date.getDate() < myBirthday.getDate())
+  )
+    return `${date.getFullYear() - myBirthday.getFullYear() - 1}`;
+  else return `${date.getFullYear() - myBirthday.getFullYear()}`;
+};
 const About = () => {
   return (
     <div className="pf__About-container_main">
-      <h2 className="pf__About-container_header"> ABOUT </h2>
-      <h1> LEARN MORE ABOUT ME </h1>
+      <h2 className="pf__container-header"> ABOUT </h2>
+      <h3 className="pf__container-header-h3"> LEARN MORE ABOUT ME</h3>
       <div className="pf__About-container_side">
         <img
           className="pf__About-container_image"
@@ -27,67 +43,109 @@ const About = () => {
         <div className="pf__About-container_side-text">
           <h2> Striving web developer </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Even though I am currently not working in a desired field, I am a
+            determined individual who aims to enter the world of web
+            development. Basic information about me:
           </p>
           <div className="pf__About-container_side-info">
             <div className="pf__About-container_side-info_inline">
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>Birthday: 1 May 1995</p>
+                <p>
+                  <b>Birthday:</b> 18 April 1995
+                </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>Age: 30</p>
+                <p>
+                  <b>Age:</b> {CalculateYears()}
+                </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>Website: www.example.com</p>
+                <p>
+                  <b>Occupation:</b> Software tester
+                </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>Degree: Master</p>
+                <p>
+                  <b>Degree:</b> Master
+                </p>
               </span>
             </div>
             <div className="pf__About-container_side-info_inline">
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>Phone: +123 456 7890</p>
+                <p>
+                  <b>Phone:</b> +381 64 385 3090
+                </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>PhEmailone: email@example.com</p>
+                <p>
+                  <b>Email:</b> email@example.com
+                </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>City: New York, USA</p>
+                <p>
+                  <b>City:</b> Pancevo, Serbia
+                </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
-                <p>Freelance: Available</p>
+                <p>
+                  <b>Freelance:</b> Available
+                </p>
               </span>
             </div>
           </div>
           <p className="pf__About-container_paragraph">
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio
-            vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-            incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime
-            officiis quidem quia. Sed et consectetur qui quia repellendus itaque
-            neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui
-            repellendus omnis culpa magni laudantium dolores.
+            I am enthusiastic about programming and computer science in general.
+            Even though I graduated from University of Mechanical Engineering,
+            my Master's degree included software topic combined with small
+            electronic kit that included Raspberry-Pi. Specifically, I trained
+            artificial neural network to classify around 10 different sound
+            commands which were used to move a small electric motor. I'm also an
+            individual with a pronounced responsibility, tolerability and I have
+            a friendly nature.
           </p>
         </div>
       </div>
-      <div className="pf__About-container_features">
-        <Feature iconURL={UI} title={"UI"} />
-        <Feature iconURL={UI} title={"UX"} />
-        <Feature iconURL={UI} title={"Responsive design"} />
-        <Feature iconURL={UI} title={"Agile development"} />
-        <Feature iconURL={UI} title={"SEO"} />
-        <Feature iconURL={UI} title={"REST-full"} />
-        <Feature iconURL={UI} title={"Communication"} />
-        <Feature iconURL={UI} title={"Analytics"} />
+
+      <h2 className="pf__container-header">SKILLS </h2>
+      <div className="pf__About-container_feature-skills">
+        <Feature iconURL={react} text={"React "} className="pf__Feature row" />
+        <Feature
+          iconURL={javascript}
+          text={"Javascript"}
+          className="pf__Feature row"
+        />
+        <Feature iconURL={html} text={"HTML "} className="pf__Feature row" />
+        <Feature iconURL={css} text={"CSS "} className="pf__Feature row" />
+        <Feature iconURL={git} text={"Git"} className="pf__Feature row" />
+        <Feature iconURL={github} text={"Github"} className="pf__Feature row" />
+        <Feature
+          iconURL={vscode}
+          text={"VS Code"}
+          className="pf__Feature row"
+        />
+        <Feature iconURL={python} text={"Python"} className="pf__Feature row" />
+        <Feature
+          iconURL={matlab}
+          text={"Matlab "}
+          className="pf__Feature row"
+        />
+        <Feature iconURL={linux} text={"Linux "} className="pf__Feature row" />
+        <Feature
+          iconURL={confluence}
+          text={"Confluence "}
+          className="pf__Feature row"
+        />
+        <Feature iconURL={jira} text={"Jira "} className="pf__Feature row" />
       </div>
+      <Footer />
     </div>
   );
 };

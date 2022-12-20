@@ -1,13 +1,20 @@
 import "./resumeFeature.css";
 
-function ResumeFeature ({Heading,SubHeading,Text}){
+function ResumeFeature({ Heading, Years, Location, Text }) {
   return (
     <div className="pf__ResumeFeature-container">
-        <h1>{Heading}</h1>
-        <h3>{SubHeading}</h3>
-        <p>{Text}</p>
+      <h4>{Heading}</h4>
+      <div className="pf__ResumeFeature-container-line">
+        <div className="pf__ResumeFeature-container-line-div">
+          <p> {Years}</p>
+        </div>
+        <i>
+          <h5>{Location}</h5>
+        </i>
+        <p className="pf__ResumeFeature-container-line-p">{Text}</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default ResumeFeature
+export default ResumeFeature;

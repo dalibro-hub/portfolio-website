@@ -1,21 +1,20 @@
 import "./socials.css";
 import { SiLinkedin, SiGithub, SiInstagram } from "react-icons/si";
-import { Logo } from "../../components";
 
 const Socials = () => {
   return (
     <div className="pf__Socials-main">
       <hr className="pf__Hr-line"></hr>
-      <Logo />
+
       <div className="pf__Socials-container">
         <div>
-          <SiLinkedin color="#fff" size={38} />
+          <SiLinkedin color="#fff" size={34} />
         </div>
         <div>
-          <SiGithub color="#fff" size={38} />
+          <SiGithub color="#fff" size={34} />
         </div>
         <div>
-          <SiInstagram color="#fff" size={38} />
+          <SiInstagram color="#fff" size={34} />
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import axios from "axios";
 import "./contact.css";
 import { BsArrowReturnRight, BsCheck2Square } from "react-icons/bs";
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
+import { Footer } from "../index";
 
 function Contact() {
   const [sent, setSent] = useState(false);
@@ -31,7 +32,8 @@ function Contact() {
   };
   return (
     <div className="pf__contact-container">
-      <h2>GET IN TOUCH</h2>
+      <h2 className="pf__container-header">CONTACT</h2>
+      <h3 className="pf__container-header-h3"> GET IN TOUCH WITH ME</h3>
       <div className="pf__contact-container-separator">
         <div className="pf__contact-container-info">
           <div>
@@ -110,6 +112,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

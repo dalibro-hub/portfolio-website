@@ -7,7 +7,7 @@ import "./header.css";
 function Header() {
   const [hoveringText, sethoveringText] = useState("");
   const addClass = () => {
-    sethoveringText("scale-up swing-in-top-fwd");
+    sethoveringText("scale-up ");
   };
   const removeClass = () => {
     sethoveringText("scale-down");
@@ -23,7 +23,7 @@ function Header() {
           </div>
           <button
             type="button"
-            className="pf-button scale-up-center swing-in-top-fwd"
+            className="pf-button scale-up-center "
           >
             Contact
           </button>
