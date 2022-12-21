@@ -1,9 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
-import "./contact.css";
-import { BsArrowReturnRight, BsCheck2Square } from "react-icons/bs";
+import { BsArrowReturnRight } from "react-icons/bs";
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
-import { Footer } from "../index";
+import { IoShareSocialSharp } from "react-icons/io5";
+import { ContactComp } from "../../components";
+import {Socials} from "../../components";
+import "./contact.css";
 
 function Contact() {
   const [sent, setSent] = useState(false);
@@ -36,22 +38,26 @@ function Contact() {
       <h3 className="pf__container-header-h3"> GET IN TOUCH WITH ME</h3>
       <div className="pf__contact-container-separator">
         <div className="pf__contact-container-info">
-          <div>
-            <MdLocationPin />
-            <p>Milosa Trebinjca 5, 26000 Pancevo</p>
-          </div>
-          <div>
-            <MdPhone />
-            <p>+381643853ZeroTwoEight</p>
-          </div>
-          <div>
-            <MdEmail />
-            <p>dalibor_jaksic@rocketmail.com</p>
-          </div>
-          <div>
-            <BsCheck2Square />
-            <p>Freelance Available</p>
-          </div>
+          <ContactComp
+            image={<MdLocationPin color="#ffeeca" size="33" />}
+            heading="My location"
+            text="Milosa Trebinjca 5, Pancevo 26000, Serbia"
+          />
+          <ContactComp
+            image={<MdPhone color="#ffeeca" size="33" />}
+            heading="Call me"
+            text="+381-64-385-3029"
+          />
+          <ContactComp
+            image={<IoShareSocialSharp color="#ffeeca" size="33" />}
+            heading="My socials"
+            text={<Socials styling="pf__Socials-contact-container" size="38"/>}
+          />
+          <ContactComp
+            image={<MdEmail color="#ffeeca" size="33" />}
+            heading="My email"
+            text="dalibor_jaksicrocketmail"
+          />
         </div>
         <div>
           <div className="pf__contact-form">
@@ -112,7 +118,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

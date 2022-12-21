@@ -13,8 +13,9 @@
   align-items: center;
   width: 100%;
 }
-.pf__Hr-line {
-  border: 1px solid #bebebebe;
-  width: 80%;
-  margin: 1rem 0 1.5rem 0;
+.pf__Socials-contact-container{
+  display: flex;
+  gap:0.7rem;
+  margin: -0.5rem 0 -1.5rem -1rem;
+  padding: 0;
 }

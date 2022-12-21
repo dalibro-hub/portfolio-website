@@ -1,0 +1,26 @@
+.pf__contactComp-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #272727;
+}
+
+.pf__contactComp-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 3rem;
+  background-color: #bebebe33;
+  margin-left: 1rem;
+}
+.pf__contactComp-title_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  gap: 0.2rem;
+}
+.pf__contactComp-title_text h3 {
+  color: #ffffff3b;
+}
