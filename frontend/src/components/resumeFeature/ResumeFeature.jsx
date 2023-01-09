@@ -9,9 +9,9 @@ function ResumeFeature({ Heading, Years, Location, Text }) {
           <p> {Years}</p>
         </div>
         <i>
-          <h5>{Location}</h5>
+          <h5 className="pf__ResumeFeature-container-line-div-h5">{Location}</h5>
         </i>
-        <p className="pf__ResumeFeature-container-line-p">{Text}</p>
+        <div className="pf__ResumeFeature-container-line-div2">{Text}</div>
       </div>
     </div>
   );

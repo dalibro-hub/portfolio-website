@@ -1,211 +1,28 @@
 .pf__contact-container {
   background-color: rgba(80, 80, 80, 0.507);
   max-width: fit-content;
+  height: fit-content;
   font-family: var(--font-family-1);
   color: var(--color-white);
-  padding: 0 3rem;
+  padding: 0 3rem 8rem 3rem;
 }
 .pf__contact-container-info {
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 35rem);
+  grid-template: repeat(2, 1fr) / repeat(2, 37rem);
   gap: 1.5rem 3rem;
   flex: 1;
   margin: 3rem 0 3rem 0;
 }
-
-.pf__contact-container-info-loc-ph {
-  display: flex;
-  gap: 2rem;
+.pf__contact-container-separator {
+  padding: 0 3rem;
 }
-.pf__contact-container-info div {
-  padding: 0.5rem;
-}
-
 .pf__contact-form form {
   padding: 2rem 3rem;
   width: inherit;
   font-size: 1.3em;
   color: #ffeeca;
-}
-.pf__contact-form input {
-  font-size: 1.1em;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid white;
-  color: white;
-  outline:none;
-}
-.smf_popup-content_form-sent {
-  text-align: center;
-  font-family: var(--font-family-3);
-}
-.smf__popup-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  width: 55vw;
-  height: fit-content;
-  padding: 2.5rem 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #f2f2f2;
-  border-radius: 50px;
-  z-index: 1000;
-}
-.smf__popup-content h2 {
-  text-align: center;
-  color: #272727;
-  font-weight: 600;
-  font-size: 32px;
-  padding-bottom: 2.5rem;
-  font-family: var(--font-family-3);
-}
-.smf__popup-closeBtn {
-  position: absolute;
-  right: 4%;
-  top: 4%;
-  border-radius: 50%;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-.smf__popup-closeImg {
-  width: 45px;
-  height: 45px;
-}
-.smf__popup-content_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-}
-.pf__contact-form_inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 40vw;
-  height: 50vh;
-  background-color: #15151583;
-}
-.smf__popup-content_inputs input:focus,
-textarea:focus {
-  transition: 0.3s ease-out;
-  transform: scale(1.02, 1);
-}
-.smf__popup-content_inputs input,
-.smf__popup-content_inputs textarea {
-  height: 4rem;
-  width: 100%;
-  line-height: 1.2;
-  border-radius: 31px;
-  padding: 15px;
-  outline: none;
-  border: none;
-  background-color: var(--color-white);
-  color: #63636e;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  font-family: var(--font-family-3);
-}
-.smf__popup-content_inputs input:focus::placeholder,
-.smf__popup-content_inputs textarea:focus::placeholder {
-  color: transparent;
-}
-.smf__popup-content_inputs textarea {
-  text-align: start;
-  height: 20rem;
-  cursor: auto;
-  resize: none;
-}
-.smf__popup-content_inputs input::placeholder,
-.smf__popup-content_inputs textarea::placeholder {
-  color: #8f8fa1ce;
-  font-weight: bold;
-  text-align: center;
-}
-.smf__popup-sendBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 8rem;
-  height: 3rem;
-  border-radius: 31px;
-  padding: 1rem 5rem;
-  color: var(--color-white);
-  background-color: var(--color-red);
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-  font-family: var(--font-family-3);
-  margin-top: 1rem;
-}
-.smf__popup-sendBtn:hover {
-  transition: 0.3s ease-out;
-  transform: scale(1.02, 1);
-}
-.smf__popup-paperPlane {
-  width: 1.1rem;
-}
-
-
-
-
-
-/* pecin css */
-.pf__Contact-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4rem;
-  min-height: 31rem;
-  text-align: center;
-  word-break: break-all;
-  padding-top: 1.5rem;
-  margin-bottom: -3.5rem;
-  z-index: 1;
-}
-.pf__Contact-content_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.3rem;
-  width: 32rem;
-  height: 29rem;
-}
-.pf__Contact-content_info-title,
-.pf__Contact-content_form-title {
   font-weight: 800;
-  font-size: 2.5rem;
   letter-spacing: 0.12rem;
-}
-.pf__Contact-content_info-text {
-  width: 90%;
-}
-.pf__Contact-content_info-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-.pf__Contact-content_info-container-h4 {
-  letter-spacing: 0.1rem;
-}
-.pf__Contact-content_info-txt {
-  font-size: small;
-  letter-spacing: 0.05rem;
-}
-.pf__Contact-content_info p {
-  font-size: small;
-  line-height: 1.5rem;
-  word-spacing: 0.1rem;
 }
 .pf__Contact-content_form {
   display: flex;
@@ -215,19 +32,26 @@ textarea:focus {
   text-align: center;
   gap: 0.6rem;
   width: 32rem;
-  height: 29rem;
+  height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
 }
 .pf__Contact-content_form-title {
   padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+.pf__Contact-content_info-txt {
+  
+  letter-spacing: 0.04rem;
 }
 .pf__Contact-content_form-container {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  width: 80%;
+  width: 85%;
   padding-bottom: 1.4rem;
 }
 .pf__Contact-content_form-container_label {
@@ -236,18 +60,21 @@ textarea:focus {
   align-items: flex-start;
   gap: 0.15rem;
   width: 100%;
-  font-size: 0.75rem;
-  letter-spacing: 0.05rem;
-  color: #a1a1a1;
+  font-size: 0.9em;
+  letter-spacing: 0.07rem;
+  color: #ffeecad2;
 }
+
 .pf__Contact-content_form-container_label input {
   width: 100%;
   height: 1.5rem;
   background-color: transparent;
   color: #dddddd;
-  font-size: 0.88rem;
+  font-size: 1.3em;
+  padding: 1rem 0;
   border: 0;
-  border-bottom: 1px solid #a1a1a181;
+  border-bottom: 1px solid white;
+  outline: none;
 }
 .pf__Contact-content_form-button {
   display: flex;
@@ -256,7 +83,7 @@ textarea:focus {
   gap: 0.3rem;
   width: 14.5rem;
   height: 3.4rem;
-  font-size: small;
+  font-size: 0.75em;
   letter-spacing: 0.11rem;
   background: transparent;
   border: none;
@@ -264,12 +91,12 @@ textarea:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 4px 5px 12px 4px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 4px 5px 12px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 4px 5px 12px 4px;
-  color: #dddddd;
+  color: #ffeeca;
 }
 .pf__Contact-content_form-button:hover {
   transform: scale(1.1);
-  transition-duration: 0.25s;
-  color: #2fa12590;
+  transition-duration: 0.2s;
+  color: #daa700;
 }
 .pf__Contact-message {
   width: 80%;

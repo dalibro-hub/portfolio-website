@@ -43,7 +43,7 @@ const About = () => {
         <div className="pf__About-container_side-text">
           <h2> Striving web developer </h2>
           <p>
-            Even though I am currently not working in a desired field, I am a
+            Despite not currently being employed in my preferred field, I am a
             determined individual who aims to enter the world of web
             development. Basic information about me:
           </p>
@@ -78,13 +78,13 @@ const About = () => {
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
                 <p>
-                  <b>Phone:</b> +381 64 385 3090
+                  <b>Phone:</b> +381-64-385-3029
                 </p>
               </span>
               <span>
                 <MdKeyboardArrowRight color="#dac400" />
                 <p>
-                  <b>Email:</b> email@example.com
+                  <b>Email:</b> dalibor_jaksic@fakemail.com
                 </p>
               </span>
               <span>
@@ -102,14 +102,17 @@ const About = () => {
             </div>
           </div>
           <p className="pf__About-container_paragraph">
-            I am enthusiastic about programming and computer science in general.
-            Even though I graduated from University of Mechanical Engineering,
-            my Master's degree included software topic combined with small
-            electronic kit that included Raspberry-Pi. Specifically, I trained
-            artificial neural network to classify around 10 different sound
-            commands which were used to move a small electric motor. I'm also an
-            individual with a pronounced responsibility, tolerability and I have
-            a friendly nature.
+            Enthusiastic about programming and computer science in general.
+            Despite graduating from University of Mechanical Engineering, there
+            was always inclinations towards software topics. Considering that,
+            Master's degree consisted of a small electronic kit that included a
+            Raspberry-Pi, which is a tiny computer with strong processing power.
+            Specifically, an artificial neural network was trained to classify
+            around 10 different sound commands for the purpose of moving a small
+            electric motor. Responsibility, tolerability, and a friendly nature
+            are also notable qualities alongside attention to detail, and
+            problem-solving abilities, which are desirable in the focused
+            industry.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Header, About, Resume, Contact, Services } from "./containers";
+import { Header, About, Resume, Contact, Services, Projects } from "./containers";
 import { Logo } from "./components";
 
 import "./App.css";
@@ -27,6 +27,7 @@ function App() {
           <Resume />
           <Contact />
           <Services />
+          <Projects/>
         </div>
       )}
     </div>

@@ -15,14 +15,13 @@ body {
   align-items: center;
   color: #fff;
   font-size: 4em;
-
   font-family: var(--font-family-5);
   height: 100vh;
   width: 100vw;
   flex-direction: column;
 }
-.loading p{
-margin-top: -2.2rem;
+.loading p {
+  margin-top: -2.2rem;
 }
 a {
   color: unset;

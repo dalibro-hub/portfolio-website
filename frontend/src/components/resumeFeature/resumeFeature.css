@@ -15,7 +15,7 @@
 }
 
 .pf__ResumeFeature-container h4 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #dab200;
   margin-bottom: 0.5rem;
 }
@@ -34,6 +34,17 @@
   background-color: #bebebe60;
   text-align: center;
   max-width: fit-content;
-  padding: 0.2rem 0.8rem;
   margin-top: 1.2rem;
+}
+.pf__ResumeFeature-container-line-div p {
+  padding: 0.2rem 0.8rem;
+  font-size: 1.1em;
+}
+.pf__ResumeFeature-container-line-div-h5 {
+  font-size: 1.15em;
+}
+.pf__ResumeFeature-container-line-div2 {
+  font-size: 1.25em;
+  white-space: pre-wrap;
+  text-align: left;
 }

@@ -3,14 +3,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-
 require("dotenv").config();
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-const PORT = 3001;
+const PORT = process.env.PORT ?? 3001;
+
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
   port: 587,
@@ -23,10 +23,10 @@ app.post("/", (req, res) => {
   const { name, phone, mail, message } = req.body;
   transporter.sendMail(
     {
-      from: "pekazeka88@hotmail.com",
-      to: "pekazeka88@hotmail.com",
-      subject: "Portfolio",
-      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${mail}\nMessage: ${message}`,
+      from: "locketman5@outlook.com",
+      to: "dalibor.n.jaksic@gmail.com",
+      subject: "Contact from portfolio website",
+      text: `NAME: ${name}\nPHONE: ${phone}\nEMAIL: ${mail}\nMESSAGE: ${message}`,
     },
     (error) => {
       if (error) {

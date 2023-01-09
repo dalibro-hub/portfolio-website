@@ -2,29 +2,30 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #15151583  ;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
 }
-
 .pf__contactComp-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  height: fit-content;
+  width: 3rem;
+  height: 3rem;
   border-radius: 3rem;
-  background-color: #bebebe63;
-  margin-left: 1rem;
+  background-color: #ffffff25;
+  margin-left: 1.5rem;
 }
 .pf__contactComp-title_text {
   display: flex;
   flex-direction: column;
-  margin-left: 0.5rem;
-  gap: 0.2rem;
+  margin-left: 1.2rem;
 }
 .pf__contactComp-title_text h3 {
   color: #ffeeca;
+  letter-spacing: 0.08rem;
 }
-.pf__contactComp-title_text p {
+.pf__contactComp-title_text-div {
   font-size: 1.3em;
-  
 }

@@ -19,6 +19,7 @@ function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsLoading(true);
+
     try {
       await axios.post("http://localhost:3001", {
         name,
@@ -26,11 +27,15 @@ function Contact() {
         mail,
         message,
       });
-      setSubmitted(true);
-      setIsLoading(false);
+      setTimeout(() => {
+        setSubmitted(true);
+        setIsLoading(false);
+      }, 800);
     } catch (error) {
-      setIsLoading(false);
-      setError(error.message);
+      setTimeout(() => {
+        setIsLoading(false);
+        setError(error.message);
+      }, 1700);
     }
     return null;
   };
@@ -52,22 +57,40 @@ function Contact() {
           <ContactComp
             image={<MdLocationPin color="#ffeeca" size="33" />}
             heading="My location"
-            text="Milosa Trebinjca 5, Pancevo 26000, Serbia"
+            text={
+              <address className="pf__Contact-content_info-txt">
+                Street Name, Pancevo 26000, Serbia
+              </address>
+            }
           />
           <ContactComp
             image={<MdPhone color="#ffeeca" size="33" />}
             heading="Call me"
-            text="+381-64-385-3029"
+            text={
+              <a
+                className="pf__Contact-content_info-txt"
+                href="tel: +381643853029"
+              >
+                +381-64-385-3029
+              </a>
+            }
           />
           <ContactComp
             image={<IoShareSocialSharp color="#ffeeca" size="33" />}
             heading="My socials"
-            text={<Socials styling="pf__Socials-contact-container" size="38" />}
+            text={<Socials styling="pf__Socials-contact-container" size="32" />}
           />
           <ContactComp
             image={<MdEmail color="#ffeeca" size="33" />}
             heading="My email"
-            text="dalibor_jaksicrocketmail"
+            text={
+              <a
+                className="pf__Contact-content_info-txt"
+                href="mailto: dalibor_jaksic@fakemail.com"
+              >
+                dalibor_jaksic@fakemail.com
+              </a>
+            }
           />
         </div>
         <div className="pf__contact-form">
@@ -143,12 +166,12 @@ function Contact() {
               </p>
             ) : isLoading ? (
               <div className="pf__Contact-spinner">
-                <ClipLoader size="44"/>
+                <ClipLoader size="44" color="#ffeeca" />
               </div>
             ) : (
               <button className="pf__Contact-content_form-button" type="submit">
-                SEND MESSAGE <BsArrowReturnRight />
-                
+                <BsArrowReturnRight size="16" />
+                SEND MESSAGE
               </button>
             )}
           </form>

@@ -12,20 +12,36 @@
 .pf__Resume_container-features {
   display: grid;
   align-items: flex-start;
-  gap:  1rem ;
+  gap: 1rem;
   grid-auto-flow: column;
   grid-template-columns: repeat(2, 38rem);
   grid-template-rows: 3rem repeat(1, 1fr);
-  
+
   margin: 2.5rem 3rem 0 3rem;
 }
-.pf__Resume_container-features-heading{
+.pf__Resume_container-features-heading,
+.pf__Resume_container-features-heading2 {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
   white-space: nowrap;
   width: fit-content;
 }
-.pf__Resume_container-features-heading h3{
-  font-size: 2em;
+
+.pf__Resume_container-features-heading2 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.pf__Resume_container-features-heading h3,
+.pf__Resume_container-features-heading2 h3 {
+  font-size: 2.1em;
+}
+.pf__Resume_container-features-wrapper-Text-div {
+  display: flex;
+  gap: 0.5rem;
+}
+.pf__Resume_container-features-wrapper-Text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
