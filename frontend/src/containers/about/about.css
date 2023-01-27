@@ -1,27 +1,27 @@
 .pf__About-container_main {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: fit-content;
   font-family: var(--font-family-1);
   color: var(--color-white);
-  background-color: rgba(80, 80, 80, 0.507);
-  padding: 0 3rem;
 }
 .pf__About-container_side {
   display: flex;
-  margin: 2.5rem 0rem 3rem 0rem;
-  justify-content: flex-start;
+
+  margin: 2.5rem 0rem 1.5rem 0rem;
+  justify-content: center;
 }
 .pf__About-container_image {
-  max-width: 15vw;
-  max-height: 30vh;
+  height: 25rem;
   margin: 1rem 3rem;
 }
 .pf__About-container_side-text {
   display: flex;
   flex-direction: column;
-  width: 49vw;
+  width: 65vw;
   font-size: 1.2em;
+  text-align: justify;
 }
 .pf__About-container_side-text h2 {
   margin-bottom: 1rem;
@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: center;
   align-items: left;
 }
 .pf__About-container_side-info_inline span {
@@ -40,16 +39,63 @@
 .pf__About-container_side-info {
   display: flex;
   gap: 8rem;
-  justify-content: left;
-  align-items: center;
+  justify-content: flex-start;
   margin: 1.8rem 0;
 }
 .pf__About-container_feature-skills {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(4, 17rem);
+  grid-template: repeat(3, 1fr) / repeat(4, 17vw);
   gap: 1.5rem 3rem;
   margin: 3rem 3rem;
 }
 .pf__About-container_feature-skills p {
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .pf__About-container_feature-skills {
+    grid-template: repeat(4, 1fr) / repeat(3, 27vw);
+    gap: 1.5rem 3rem;
+    margin: 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .pf__About-container_feature-skills {
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .pf__About-container_side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pf__About-container_side-text {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pf__About-container_feature-skills {
+    grid-template: repeat(5, 1fr) / repeat(2, 40vw);
+    gap: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pf__About-container_side-info {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pf__About-container_feature-skills {
+    grid-template: repeat(5, 1fr) / repeat(1, 60vw);
+    place-content: center;
+    gap: 1.3rem 0rem;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .pf__About-container_image {
+    margin: 1rem 0;
+  }
 }

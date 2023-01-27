@@ -11,17 +11,18 @@
   cursor: pointer;
   z-index: 1;
   color: var(--color-white);
+  transition: all 0.25s ease-in-out;
 }
 .pf__Socials-link:hover {
   transform: scale(1.1);
-  transition-duration: 0.25s;
   color: #daa700;
 }
 .pf__Socials-contact-container{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap:2rem; 
+  flex-wrap: wrap;
+  gap:1.3rem; 
   margin-top: 0.5rem;
   margin-bottom: 0.7rem;
 }

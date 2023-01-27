@@ -16,6 +16,7 @@
 .pf__Feature-title {
   font-size: 1.2rem;
   color: #ffeeca;
+  text-align: center;
 }
 .row {
   flex-direction: row;
@@ -30,4 +31,9 @@
 }
 .row:hover {
   background-color: #66615871;
+}
+@media screen and (max-width: 700px) {
+  .pf__Feature {
+    gap: 0.5rem;
+  }
 }

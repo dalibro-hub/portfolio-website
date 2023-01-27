@@ -6,15 +6,15 @@
   box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) -4px 6px 13px 4px;
+  width: 100%;
 }
 .pf__contactComp-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  padding: 0.5vw;
   border-radius: 3rem;
-  background-color: #ffffff25;
+  background-color: #11111141;
   margin-left: 1.5rem;
 }
 .pf__contactComp-title_text {
@@ -26,6 +26,25 @@
   color: #ffeeca;
   letter-spacing: 0.08rem;
 }
-.pf__contactComp-title_text-div {
-  font-size: 1.3em;
+
+@media screen and (max-width: 900px) {
+  .pf__contactComp-title_text{
+    font-size: 0.9em;
+  }
+  }
+
+@media screen and (max-width: 600px) {
+  .pf__contactComp-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  .pf__Contact-content_form-title {
+font-size: 1.7em;
+  }
+  .pf__contactComp-title_text{
+    font-size: 0.8em;
+  }
 }

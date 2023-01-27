@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   border-left: 1px solid #dab20083;
-  padding-left: 2rem;
+  padding:0 2rem;
   margin: -1rem 0 2rem 0.55rem;
   gap: 0.8rem;
 }
@@ -47,4 +47,14 @@
   font-size: 1.25em;
   white-space: pre-wrap;
   text-align: left;
+}
+@media screen and (max-width: 450px) {
+  
+  .pf__ResumeFeature-container h4::before {
+    display: none;
+  }
+  .pf__ResumeFeature-container-line{
+    border-left: none;
+    padding: 0 1rem;
+  }
 }

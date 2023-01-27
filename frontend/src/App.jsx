@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Header, About, Resume, Contact, Services, Projects } from "./containers";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header, Resume, About, Contact, Services } from "./containers";
 import { Logo } from "./components";
 
 import "./App.css";
@@ -12,7 +13,7 @@ function App() {
     }, 12);
   }, []);
   return (
-    <div>
+    <Router>
       {loading ? (
         <div className="loading ">
           <div className="puff-in-center">
@@ -22,15 +23,16 @@ function App() {
         </div>
       ) : (
         <div className="App">
-          <Header />
-          <About />
-          <Resume />
-          <Contact />
-          <Services />
-          <Projects/>
+          <Routes>
+            <Route path="/" element={<Header />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="About" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="Services" element={<Services />} />
+          </Routes>
         </div>
       )}
-    </div>
+    </Router>
   );
 }
 

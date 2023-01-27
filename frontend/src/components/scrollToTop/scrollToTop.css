@@ -1,0 +1,22 @@
+.icon-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3%;
+  right: 2%;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 20;
+  transition: transform 0.75s;
+  cursor: pointer;
+  border-radius: 30rem;
+  background-color: transparent;
+  color: #ffffffcc;
+}
+
+.icon-position:hover {
+  transition: ease-out;
+  transform: scale(1.35);
+  transition: transform 0.75s;
+}

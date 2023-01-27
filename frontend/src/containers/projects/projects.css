@@ -1,47 +1,168 @@
 .pf__Projects-container {
-  background-color: rgba(80, 80, 80, 0.507);
+  position: relative;
   width: 100vw;
   height: 100vh;
-  font-family: var(--font-family-1);
-  color: var(--color-white);
-  padding: 0rem 3rem;
-}
-.pf__Projects-container-carousel {
-  margin: 2rem -2.5rem;
-  padding: -3rem -3rem;
+  padding: 0rem 3vw;
+  overflow: hidden;
+  background-color: #1d1d1d;
+  z-index: 4;
 }
 .swiper {
-  height: 80vh;
+  display: flex;
+  justify-content: center;
+  height: 87vh;
+  margin: 0 -39vw;
+  width: 170vw;
+}
+.swiper-wrapper {
+  margin-top: 5rem;
+}
+.swiper-slide::after {
+  content: "";
+  background-image: inherit;
+  background-position: bottom;
+  background-size: cover;
+  transform: scaleY(-1);
+  width: 99.8%;
+  height: 40%;
+  position: absolute;
+  bottom: -41%;
+  opacity: 0.4;
+}
+.swiper-slide::before {
+  z-index: 1;
+  content: "";
+  width: inherit;
+  height: 42%;
+  position: absolute;
+  bottom: -42%;
+  background: linear-gradient(to bottom, #1d1d1d50, #1d1d1d);
+}
+.swiper-slide:active {
+  /*pointer-events: none;*/
+  cursor: grabbing;
 }
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: rgb(63, 63, 63);
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  cursor: grab;
 }
-.swiper-slide img {
-  background-color: #000;
-  display: block;
+.pf_Projects-carousel {
+  height: 53%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.smfproject {
+  background-image: url("../../assets/smfproject.png");
+}
+.underconstruction {
+  background-image: url("../../assets/underconstruction.webp");
+}
+
+.swiper-slide-active {
+  animation: box-shadow 0.6s;
+  box-shadow: #dab20071 0px -3px 35px -7px;
+}
+.pf_Projects-main_div {
+  text-align: center;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  font-weight: 800;
 }
-.swiper-slide-next {
-  width: 50rem !important;
+.pf_Projects-overlay_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #dab200ec;
+  background: #111111e0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1.2s ease-out;
+  gap: 2.5rem;
+  padding: 1rem 5rem;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  letter-spacing: 0.07rem;
 }
-.swiper-slide-active{
-  width: 20rem !important;
+.pf_Projects-overlay_div h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.pf_Projects-overlay_div p {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.swiper-slide-active:hover
+  .pf_Projects-main_div:hover
+  .pf_Projects-overlay_div {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.6s ease-out;
+}
+.pf_Projects-links {
+  display: flex;
+  width: fit-content;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+.pf_Projects-links a {
+  padding: 0rem 1rem;
+}
+.pf_Projects-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 10rem;
+  width: fit-content;
+  height: 2.9rem;
+  border-radius: 5px;
+  font-size: clamp(0.7em, 0.75vw, 2em);
+  letter-spacing: 0.17rem;
+  background-color: rgba(54, 54, 54, 0.5);
+}
+.pf_Projects-button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  box-shadow: rgba(203, 206, 2, 0.726) 0px 0px 8px 1px;
+  -moz-box-shadow: rgba(203, 206, 2, 0.726) 0px 0px 8px 1px;
+  -webkit-box-shadow: rgba(203, 206, 2, 0.726) 0px 0px 8px 1px;
+}
+@keyframes box-shadow {
+  from {
+    box-shadow: #dab20000 0px 0px 0px 0px;
+  }
+  to {
+    box-shadow: #dab20071 0px -3px 35px -7px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .pf_Projects-overlay_div {
+    gap: 0.5rem;
+  }
+  .pf_Projects-overlay_div p {
+    margin-top: 0.7rem;
+  }
+  .pf_Projects-links {
+    gap: 1rem;
+  }
+  .swiper-wrapper {
+    margin-top: 2rem;
+  }
+  .pf_Projects-carousel {
+    height: 69%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .swiper-coverflow {
+    margin: 0 -83vw;
+    width: 260vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pf_Projects-links {
+    flex-direction: column;
+  }
 }

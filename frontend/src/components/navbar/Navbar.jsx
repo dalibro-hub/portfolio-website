@@ -1,67 +1,139 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
-import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import { Logo } from "../../components";
 import "./navbar.css";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const { ref, inView } = useInView({
-    threshold: 0.3,
-  });
+  const [activeLink, setActiveLink] = useState("");
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setActiveLink("/");
+    } else if (location.pathname === "/about") {
+      setActiveLink("about");
+    } else if (location.pathname === "/resume") {
+      setActiveLink("resume");
+    } else if (location.pathname === "/services") {
+      setActiveLink("services");
+    }
+  }, [location]);
+  const handleClick = (link) => {
+    setActiveLink(link);
+  };
 
   return (
-    <div
-      ref={ref}
-      className={inView ? "smf__Navbar fade-in-fast" : "smf__Navbar"}
-    >
-      <div className="smf__Navbar-containers ">
-        <div className="smf__Navbar_containers-logo swing-in-top-fwd">
+    <div>
+      <div className="Pf__Navbar-containers ">
+        <div className="Pf__Navbar_containers-logo swing-in-top-fwd">
           <Logo size="45 -62 180 370" width={"30mm"} height={"30mm"} />
         </div>
-        <a className=" scale-up-center" href="#HOME">
+        <Link
+          onClick={() => handleClick("/")}
+          className={
+            activeLink === "/" ? "pf__Navbar-link-active" : "pf__Navbar-link "
+          }
+          to="/"
+        >
           HOME
-        </a>
-        <a className=" scale-up-center " href="#ABOUT">
+        </Link>
+        <Link
+          onClick={() => handleClick("about")}
+          className={
+            activeLink === "about"
+              ? "pf__Navbar-link-active "
+              : "pf__Navbar-link "
+          }
+          to="/about"
+        >
           ABOUT
-        </a>
-        <a className="scale-up-center " href="#RESUME">
+        </Link>
+        <Link
+          onClick={() => handleClick("resume")}
+          className={
+            activeLink === "resume"
+              ? "pf__Navbar-link-active"
+              : "pf__Navbar-link"
+          }
+          to="/resume"
+        >
           RESUME
-        </a>
-        <a className="scale-up-center  " href="#CONTACT">
+        </Link>
+        <Link
+          onClick={() => handleClick("services")}
+          className={
+            activeLink === "services"
+              ? "pf__Navbar-link-active"
+              : "pf__Navbar-link"
+          }
+          to="/services"
+        >
           SERVICES
-        </a>
+        </Link>
       </div>
-      <div className="smf__Navbar-menu swing-in-top-fwd">
+      <div className="Pf__Navbar-menu swing-in-top-fwd">
         {toggleMenu ? (
           <RiCloseLine
-            color="#fff"
+            color="#FFF"
             size={30}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
           <RiMenuLine
-            color="#fff"
+            color="#DAA700"
             size={30}
             onClick={() => setToggleMenu(true)}
           />
         )}
         {toggleMenu && (
-          <div className="smf__Navbar-menu-container fade-in-fast">
-            <div className="smf__Navbar-menu_container-links">
-              <a className="scale-up-center" href="#HOME">
+          <div className="Pf__Navbar-menu-container swing-in-top-fwd">
+            <div className="Pf__Navbar-menu_container-links">
+              <Link
+                onClick={() => handleClick("/")}
+                className={
+                  activeLink === "/"
+                    ? "pf__Navbar-link-active"
+                    : "pf__Navbar-link "
+                }
+                to="/"
+              >
                 HOME
-              </a>
-              <a className="scale-up-center" href="#ABOUT">
+              </Link>
+              <Link
+                onClick={() => handleClick("about")}
+                className={
+                  activeLink === "about"
+                    ? "pf__Navbar-link-active "
+                    : "pf__Navbar-link "
+                }
+                to="/about"
+              >
                 ABOUT
-              </a>
-              <a className="scale-up-center" href="#RESUME">
+              </Link>
+              <Link
+                onClick={() => handleClick("resume")}
+                className={
+                  activeLink === "resume"
+                    ? "pf__Navbar-link-active"
+                    : "pf__Navbar-link"
+                }
+                to="/resume"
+              >
                 RESUME
-              </a>
-              <a className="scale-up-center" href="#CONTACT">
+              </Link>
+              <Link
+                onClick={() => handleClick("services")}
+                className={
+                  activeLink === "services"
+                    ? "pf__Navbar-link-active"
+                    : "pf__Navbar-link"
+                }
+                to="/services"
+              >
                 SERVICES
-              </a>
+              </Link>
             </div>
           </div>
         )}

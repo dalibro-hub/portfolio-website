@@ -6,7 +6,7 @@ const ContactComp = ({ image, heading, text }) => {
       <div className="pf__contactComp-image">{image}</div>
       <div className="pf__contactComp-title_text">
         <h3>{heading} </h3>
-        <div className="pf__contactComp-title_text-div">{text}</div>
+        <div>{text}</div>
       </div>
     </div>
   );

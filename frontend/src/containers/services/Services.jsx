@@ -1,4 +1,4 @@
-import { Feature } from "../../components";
+import { Feature, Navbar } from "../../components";
 import { Footer } from "../index";
 import {
   UI,
@@ -14,8 +14,9 @@ import "./services.css";
 
 const Services = () => {
   return (
-    <div className="pf__Services-container">
-      <div>
+    <div className=" pf__Services-container ">
+      <Navbar />
+      <div className=" fade-in">
         <h2 className="pf__container-header">SERVICES</h2>
         <h3 className="pf__container-header-h3"> PROFESSIONAL SERVICES</h3>
         <div className="pf__Services-container_features">
@@ -27,14 +28,14 @@ const Services = () => {
               "2 years of experience in agile methodology and development. Agile emphasizes flexibility and collaboration, and it is important because of its adaptiveness to ever-changing project requirements."
             }
           />
-            <Feature
-              iconURL={SEO}
-              title={"SEO"}
-              className="pf__Feature"
-              text={
-                "Following the best practices in web development for highest SEO optimization, since marketing is as equally important as creative content, and SEO is here to help us increase website traffic."
-              }
-            />
+          <Feature
+            iconURL={SEO}
+            title={"SEO"}
+            className="pf__Feature"
+            text={
+              "Following the best practices in web development for highest SEO optimization, since marketing is as equally important as creative content, and SEO is here to help us increase website traffic."
+            }
+          />
           <Feature
             iconURL={shield}
             title={"Security"}
@@ -84,8 +85,8 @@ const Services = () => {
             }
           />
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
