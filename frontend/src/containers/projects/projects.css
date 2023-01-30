@@ -165,4 +165,10 @@
   .pf_Projects-links {
     flex-direction: column;
   }
+  .pf_Projects-carousel {
+    background-size: cover;
+  }
+  .underconstruction {
+    background-position: 85% ;
+  }
 }

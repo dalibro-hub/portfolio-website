@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8 # Turn on the rewrite engine RewriteEngine On #
+Redirectnon-www to www RewriteCond %{HTTP_HOST} ^jdalibor.co [NC]
+RewriteRule^(.*)$ https://www.jdalibor.co/$1 [L,R=301] # Enable GZIP
+compression<ifModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css
+  application/x-javascript application/javascript</ifModule
+># Enable browser caching<IfModule mod_expires.c>
+  ExpiresActive On ExpiresByType image/jpg "access 1 year" ExpiresByType
+  image/jpeg "access 1 year" ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year" ExpiresByType text/css "access 1
+  month" ExpiresByType text/html "access 1 month" ExpiresByType application/pdf
+  "access 1 month" ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month" ExpiresByType
+  image/x-icon "access 1 year" ExpiresDefault "access 1 month"</IfModule
+># Set up 301 redirects for broken/changed URLs Redirect 301
+/old-page.htmlhttps://www.jdalibor.co/new-page # Set up a custom 404 error
+pageErrorDocument 404 /index.html
