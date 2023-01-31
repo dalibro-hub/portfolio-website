@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-const PORT = process.env.PORT ?? 3001;
+const PORT = process.env.PORT ?? 3010;
 
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
