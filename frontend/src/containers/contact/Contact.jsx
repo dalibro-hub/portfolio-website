@@ -23,7 +23,7 @@ function Contact({ open, onClose, keepOpen }) {
     setIsLoading(true);
 
     try {
-      await axios.post("http://jdalibor.co:3010", {
+      await axios.post("https://jdalibor.co:3010", {
         name,
         phone,
         mail,
