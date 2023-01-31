@@ -23,7 +23,7 @@ function Contact({ open, onClose, keepOpen }) {
     setIsLoading(true);
 
     try {
-      await axios.post("http://localhost:3001", {
+      await axios.post("http://jdalibor.co:3010", {
         name,
         phone,
         mail,
@@ -192,7 +192,7 @@ function Contact({ open, onClose, keepOpen }) {
               </div>
               {submitted ? (
                 <p className="pf__Contact-message">
-                  Thank you for contacting me! <br /> 
+                  Thank you for contacting me! <br />
                 </p>
               ) : error ? (
                 <p className="pf__Contact-message">

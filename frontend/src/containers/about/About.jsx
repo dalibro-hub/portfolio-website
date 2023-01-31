@@ -102,12 +102,12 @@ const About = () => {
               Despite background in mechanical engineering, there was always
               strong interest towards software topics, as evidenced by Master's
               degree, which focused on electronics, including a project
-              involving a Raspberry Pi, a mini computer. Artificial neural
-              network was successfully trained to recognize and respond to
-              different sound commands in order to control a small electric
+              involving a mini computer called Raspberry Pi. An artificial
+              neural network was successfully trained to recognize and respond
+              to different sound commands in order to control a small electric
               motor. Beyond the technical skills, focus is also on
               responsibility, tolerability, and a friendly nature, which are all
-              highly valued in the chosen industry.
+              highly valued skills in the chosen industry.
             </p>
           </div>
         </div>
