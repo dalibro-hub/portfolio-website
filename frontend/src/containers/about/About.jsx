@@ -36,7 +36,6 @@ const About = () => {
         <h2 className="pf__container-header"> ABOUT </h2>
         <h3 className="pf__container-header-h3"> LEARN MORE ABOUT ME</h3>
         <div className="pf__About-container_side">
-          
           <div className="pf__About-container_side-text">
             <h2> Striving web developer </h2>
             <p>
@@ -100,17 +99,15 @@ const About = () => {
             </div>
             <p className="pf__About-container_paragraph">
               Enthusiastic about programming and computer science in general.
-              Despite graduating from University of Mechanical Engineering,
-              there were always inclinations towards software topics. Taking
-              that into account, it is only logical that Master's degree
-              consisted of a small electronic kit that included a Raspberry-Pi,
-              which is a tiny computer with strong processing power.
-              Specifically, an artificial neural network was trained to classify
-              around 10 different sound commands for the purpose of moving a
-              small electric motor. Responsibility, tolerability, and a friendly
-              nature are also notable qualities alongside attention to detail,
-              and problem-solving abilities, which are desirable in the focused
-              industry.
+              Despite background in mechanical engineering, there was always
+              strong interest towards software topics, as evidenced by Master's
+              degree, which focused on electronics, including a project
+              involving a Raspberry Pi, a mini computer. Artificial neural
+              network was successfully trained to recognize and respond to
+              different sound commands in order to control a small electric
+              motor. Beyond the technical skills, focus is also on
+              responsibility, tolerability, and a friendly nature, which are all
+              highly valued in the chosen industry.
             </p>
           </div>
         </div>
