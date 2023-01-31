@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.0fe6c2df.css",
+    "main.js": "./static/js/main.f306448c.js",
+    "static/media/pict2.jpg": "./static/media/pict2.f509a5ba3ddd0fc356a3.jpg",
+    "static/media/pic4.jpg": "./static/media/pic4.b01f47d18391ed66119e.jpg",
+    "static/media/smfproject.png": "./static/media/smfproject.d557089f9e87c375ede7.png",
+    "static/media/underconstruction.webp": "./static/media/underconstruction.6b86ae5955a3bb662d3f.webp",
+    "index.html": "./index.html",
+    "main.0fe6c2df.css.map": "./static/css/main.0fe6c2df.css.map",
+    "main.f306448c.js.map": "./static/js/main.f306448c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fe6c2df.css",
+    "static/js/main.f306448c.js"
+  ]
+}
