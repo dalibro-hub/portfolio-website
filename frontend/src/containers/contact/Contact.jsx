@@ -192,8 +192,7 @@ function Contact({ open, onClose, keepOpen }) {
               </div>
               {submitted ? (
                 <p className="pf__Contact-message">
-                  Thank you for contacting me! <br /> I will get back to you
-                  soon.
+                  Thank you for contacting me! <br /> 
                 </p>
               ) : error ? (
                 <p className="pf__Contact-message">
