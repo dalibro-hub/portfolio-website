@@ -19,7 +19,8 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS,
   },
 });
-app.post("/", (req, res) => {
+app.post("/api", (req, res) => {
+  console.log(req.body);
   const { name, phone, mail, message } = req.body;
   transporter.sendMail(
     {
@@ -31,13 +32,14 @@ app.post("/", (req, res) => {
     (error) => {
       if (error) {
         res.status(500).send("An error occurred while sending the email");
+        console.log(error, res);
       } else {
         res.status(200).send("Email sent successfully");
       }
     }
   );
 });
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Server is running");
 });
 app.listen(PORT, (error) => {

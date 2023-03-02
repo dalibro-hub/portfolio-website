@@ -95,6 +95,9 @@
     margin: 0;
     margin-top: 2rem;
   }
+  .pf__About-container_side-text{
+    text-align: left;
+  }
   .pf__About-container_image {
     margin: 1rem 0;
   }

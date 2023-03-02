@@ -8,10 +8,14 @@ import "./App.css";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 12);
+    }, 1995);
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
+
   return (
     <Router>
       {loading ? (

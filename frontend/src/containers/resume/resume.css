@@ -35,18 +35,17 @@
 .pf__Resume_container-features-heading h3,
 .pf__Resume_container-features-heading2 h3 {
   font-size: 2.1em;
+  color: #FFEFCA;
 }
 .pf__Resume_container-features-wrapper-Text-div {
   display: flex;
   gap: 0.5rem;
   text-align: justify;
-
 }
 .pf__Resume_container-features-wrapper-Text {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  
 }
 @media screen and (max-width: 950px) {
   .pf__Resume_container-features {
@@ -56,10 +55,14 @@
     margin: 2rem 3rem 0 3rem;
   }
 }
+@media screen and (max-width: 650px) {
+  .pf__Resume_container-features-wrapper-Text-div {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 450px) {
   .pf__Resume_container-features {
     gap: 1rem;
     margin: 2rem 1rem 0 1rem;
   }
-  
 }

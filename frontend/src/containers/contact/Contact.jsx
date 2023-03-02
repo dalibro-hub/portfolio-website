@@ -23,8 +23,8 @@ function Contact({ open, onClose, keepOpen }) {
     setIsLoading(true);
 
     try {
-      await axios.post("https://jdalibor.co:3010", {
-        name,
+      await axios.post("https://api.jdalibor.co/api/", {
+        /*http://localhost:3010*/ name,
         phone,
         mail,
         message,
@@ -34,10 +34,8 @@ function Contact({ open, onClose, keepOpen }) {
         setIsLoading(false);
       }, 800);
     } catch (error) {
-      setTimeout(() => {
-        setIsLoading(false);
-        setError(error.message);
-      }, 1700);
+      setIsLoading(false);
+      setError(error.message);
     }
     return null;
   };
@@ -53,9 +51,6 @@ function Contact({ open, onClose, keepOpen }) {
         event.preventDefault();
         onClose();
       }
-      if (event.key === "Tab") {
-        event.preventDefault();
-      }
     };
     document.addEventListener("keydown", keyDownHandler);
     return () => {
@@ -67,7 +62,7 @@ function Contact({ open, onClose, keepOpen }) {
     const timeout = setTimeout(() => {
       setSubmitted(false);
       setError("");
-    }, 4000);
+    }, 3000);
     return () => {
       clearTimeout(timeout);
     };

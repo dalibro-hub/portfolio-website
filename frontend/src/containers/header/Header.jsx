@@ -2,6 +2,7 @@ import { Navbar } from "../../components";
 import { Contact, Projects } from "../../containers";
 import { useState, useEffect } from "react";
 import { GiPlainArrow } from "react-icons/gi";
+import img from "../../assets/pic4w.webp"
 import "./header.css";
 
 function Header() {
@@ -41,6 +42,7 @@ function Header() {
   return (
     <>
       <div className="pf__Header-main">
+      <img src={img} className="pf__background-image" alt="background" />
         <Navbar />
         <div className="pf__Header">
           <div className="pf__Header-container">

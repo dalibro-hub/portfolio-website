@@ -1,14 +1,18 @@
 .pf__Header-main {
   height: 100vh;
-  background-image: url("../../assets/pic4.jpg");
-  background-size: cover;
   z-index: 3;
   position: relative;
+  overflow: hidden;
+
 }
 .pf__Header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.pf__background-image {
+  position: absolute;
+  height: 100%;
 }
 .pf__Header-container::after {
   content: "";
@@ -84,7 +88,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  
   .pf__Header-container::after {
     top: 0;
     width: 100vw;

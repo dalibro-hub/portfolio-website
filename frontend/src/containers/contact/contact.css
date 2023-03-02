@@ -76,7 +76,6 @@
   letter-spacing: 0.07rem;
   color: #ffeecad2;
 }
-
 .pf__Contact-content_form-container_label input {
   width: 100%;
   height: 1.5rem;
@@ -132,8 +131,6 @@
     top:3rem;
     left:10vw;
   }
- 
-  
 }
 @media screen and (max-width: 400px) {
   .pf__contact-container {
@@ -141,6 +138,4 @@
     width: 90vw;
    left: 5vw;
   }
-  
-  
 }
